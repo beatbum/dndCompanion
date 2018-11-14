@@ -1,8 +1,8 @@
 {% extends "global/base.html" %}
-{% import static %}
+{% load static %}
 
 {% block content %}
     {% for monster in monster_list %}
-    <a href="{% url sensors:monster.name %}">{% monster.name %}</a>
+    <a href="/monster/{{ monster.name }}">{{ monster.name }}</a>
     {% endfor %}
 {% endblock content %}

@@ -1,9 +1,7 @@
 from django.shortcuts import render
-
-# Create your views here.
-
 from django.http import HttpResponse
+# Create your views here.
 
 def index(request):
     context = {}
-    return render(request,'encounters/encounter_home.html',context)
+    return render(request,'home/home.html', context)

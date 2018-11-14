@@ -4,5 +4,5 @@ from django.db import models
 
 class combatant(models.Model):
     hp = models.IntegerField(default=0)
-    initiative = model.IntegerField(default = 1)
+    initiative = models.IntegerField(default = 1)
 
